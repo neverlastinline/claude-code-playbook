@@ -95,6 +95,18 @@ claude
 
 On first launch, select **"Login with Claude.ai"**. Your browser will open — log in and authorise. That's it.
 
+Every session after that just needs `claude` — it uses your Pro subscription automatically.
+
+**If you installed via the desktop app and `claude` isn't found in terminal:**
+
+The desktop app needs to register the CLI separately. Open the desktop app → Settings → install the CLI component. Or try:
+
+```bash
+claude --install-cli
+```
+
+After that, `claude` will work in any terminal window.
+
 ---
 
 **Option B: Anthropic API key**
