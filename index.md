@@ -145,7 +145,7 @@ source ~/.zshrc
 claude
 ```
 
-You should see the Claude Code prompt. Type `exit` to leave.
+You'll see the Claude Code prompt — you're in. Type `/exit` to leave.
 
 ### 1.3 Global Settings
 
