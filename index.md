@@ -37,7 +37,26 @@ claude --version
 
 **Common gotchas:**
 - If `npm` is not found, you need to install Node.js first — download it from nodejs.org
-- If you see a permissions error, do not use `sudo`. Instead, fix your npm permissions or use a Node version manager like `nvm`
+- If you see a permissions error, do not use `sudo`. Instead, fix your npm permissions with the steps below
+
+**Permissions error fix (macOS)**
+
+npm's global directory is owned by root by default. Fix it by pointing npm at a directory you own:
+
+```bash
+mkdir -p ~/.npm-global
+npm config set prefix '~/.npm-global'
+echo 'export PATH=~/.npm-global/bin:$PATH' >> ~/.zshrc
+source ~/.zshrc
+```
+
+Then re-run the install:
+
+```bash
+npm install -g @anthropic-ai/claude-code
+```
+
+This is a one-time fix — all future global npm installs will work without permission errors.
 
 ### 1.2 API Key Configuration
 
