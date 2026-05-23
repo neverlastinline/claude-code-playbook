@@ -99,13 +99,13 @@ Every session after that just needs `claude` — it uses your Pro subscription a
 
 **If you installed via the desktop app and `claude` isn't found in terminal:**
 
-The desktop app needs to register the CLI separately. Open the desktop app → Settings → install the CLI component. Or try:
+The desktop app doesn't automatically add the CLI to your terminal. You need to install it separately via npm:
 
 ```bash
-claude --install-cli
+npm install -g @anthropic-ai/claude-code
 ```
 
-After that, `claude` will work in any terminal window.
+After that, `claude` will work in any terminal window. If you hit a permissions error, follow the fix in section 1.1 Option B above.
 
 ---
 
