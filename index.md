@@ -21,7 +21,28 @@ Open this document at the start of every new project. Work through it in order:
 ## Part 1: One-Time Setup
 *Do this once per machine*
 
-### 1.1 Install Claude Code CLI
+### 1.1 Install Claude Code
+
+There are two ways to install Claude Code. Choose the one that suits you.
+
+---
+
+**Option A: Desktop App (easiest)**
+
+Download and install the Claude Code desktop app directly — no terminal or Node.js required.
+
+1. Go to [claude.ai/download](https://claude.ai/download)
+2. Download the version for your computer (Mac or Windows)
+3. Open the downloaded file and follow the installer
+4. Launch Claude Code from your Applications folder
+
+The desktop app includes everything built in. This is the recommended starting point if you're new to Claude Code.
+
+---
+
+**Option B: CLI via npm (for terminal users)**
+
+Use this if you prefer working in the terminal or need Claude Code available as a command across your whole system.
 
 Open your terminal and run:
 
