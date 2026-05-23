@@ -58,9 +58,27 @@ npm install -g @anthropic-ai/claude-code
 
 This is a one-time fix — all future global npm installs will work without permission errors.
 
-### 1.2 API Key Configuration
+### 1.2 Authentication
 
-Claude Code needs an Anthropic API key to work.
+Claude Code supports two ways to authenticate. Choose the one that matches what you have.
+
+---
+
+**Option A: Claude.ai subscription (Pro, Team, or Enterprise)**
+
+No API credits needed. Run Claude Code and log in with your Claude.ai account:
+
+```bash
+claude
+```
+
+On first launch, select **"Login with Claude.ai"**. Your browser will open — log in and authorise. That's it.
+
+---
+
+**Option B: Anthropic API key**
+
+Use this if you have API credits on console.anthropic.com and want direct API access.
 
 **Step 1:** Get your key at console.anthropic.com → API Keys → Create Key
 
@@ -86,7 +104,9 @@ Save the file, then reload it:
 source ~/.zshrc
 ```
 
-**Step 3:** Verify it's working:
+---
+
+**Verify it's working:**
 
 ```bash
 claude
